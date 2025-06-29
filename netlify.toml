@@ -1,5 +1,5 @@
 [build]
-  command = "npm ci --prefer-offline --no-audit && npm run build"
+  command = "cd web && npm ci --prefer-offline --no-audit && npm run build"
   publish = "web/dist"
 
 [build.environment]

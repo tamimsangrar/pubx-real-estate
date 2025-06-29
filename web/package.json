@@ -48,7 +48,8 @@
     "@storybook/react": "^7.4.0",
     "@storybook/react-vite": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
-    "storybook": "^7.4.0"
+    "storybook": "^7.4.0",
+    "@netlify/plugin-cache": "^1.0.3"
   },
   "keywords": [
     "real-estate",
