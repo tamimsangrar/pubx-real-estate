@@ -1,0 +1,40 @@
+[build]
+  command = "npm run build"
+  publish = "web/dist"
+  functions = ".netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  PYTHON_VERSION = "3.9"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://chat-app-twilight-snow-4634.fly.dev/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  included_files = ["supabase/**"]
+
+[functions."chat"]
+  included_files = ["supabase/**"]
+
+[functions."mcp"]
+  included_files = ["supabase/**"]
+
+[functions."crm_upsert_lead"]
+  included_files = ["supabase/**"]
+
+[functions."calendar_block_tentative"]
+  included_files = ["supabase/**"]
+
+[functions."crawler_fetch_listings"]
+  included_files = ["supabase/**"]
+
+[functions."voice_connect_call"]
+  included_files = ["supabase/**"] 
