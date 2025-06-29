@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './web'),
+      '@': path.resolve(__dirname, './'),
     },
   },
   build: {
-    outDir: 'web/dist',
+    outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       output: {
