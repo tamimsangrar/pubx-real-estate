@@ -7,16 +7,6 @@
   NPM_FLAGS = "--prefer-offline --no-audit"
   NPM_CONFIG_PRODUCTION = "false"
 
-# Cache node_modules for faster builds
-[[plugins]]
-  package = "@netlify/plugin-cache"
-  [plugins.inputs]
-    paths = [
-      "node_modules/.cache",
-      ".npm",
-      "web/node_modules/.cache"
-    ]
-
 [[redirects]]
   from = "/api/*"
   to = "https://chat-app-twilight-snow-4634.fly.dev/api/:splat"
