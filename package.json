@@ -4,16 +4,16 @@
   "description": "A Netlify-hosted, MCP-enabled real estate chat agent",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx,ts,tsx",
-    "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
-    "type-check": "tsc --noEmit",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "cd web && npm run dev",
+    "build": "cd web && npm run build",
+    "preview": "cd web && npm run preview",
+    "lint": "cd web && npm run lint",
+    "lint:fix": "cd web && npm run lint:fix",
+    "type-check": "cd web && npm run type-check",
+    "test": "cd web && npm run test",
+    "test:ui": "cd web && npm run test:ui",
+    "storybook": "cd web && npm run storybook",
+    "build-storybook": "cd web && npm run build-storybook"
   },
   "dependencies": {
     "react": "^18.2.0",
